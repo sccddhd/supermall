@@ -7,7 +7,7 @@
     </swiper-item>
   </swiper>-->
 
-  <el-carousel height="180px" indicator-position="outside">
+  <el-carousel height="180px" arrow="always">
     <el-carousel-item v-for="item in banners" :key="item.link">
       <!-- <h3 class="small">{{ item }}</h3> -->
       <!-- <a :href="item.link">
@@ -19,7 +19,7 @@
 </template>
 
 <script>
-import { Swiper, SwiperItem } from "@components/common/swiper";
+// import { Swiper, SwiperItem } from "@components/common/swiper";
 export default {
   name: "HomeSwiper",
   props: {
@@ -30,7 +30,7 @@ export default {
       }
     }
   },
-  components: { Swiper, SwiperItem }
+  // components: { Swiper, SwiperItem }
 };
 </script>
 
